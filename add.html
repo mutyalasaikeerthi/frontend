@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add car</title>
+    <style>
+        body{
+            margin-top: 0px;
+        }
+
+        input{
+    font-size: 20px;
+    border: 2px solid rgb(137, 41, 41);
+    border-radius: 5px;
+    color:blueviolet;
+}
+textarea{
+    font-size: 20px;
+    border: 2px solid rgb(125, 51, 51);
+    border-radius: 5px;
+}
+select{
+    font-size: 20px;
+    border: 2px solid rgb(150, 85, 85);
+    border-radius: 5px;
+    box
+   
+}
+.form{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: rgb(4, 4, 4);
+    border: 3px solid rgb(150, 85, 85);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: red;
+    width:400px;
+    height:400px;
+}
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.signup1
+{
+    color:rgba(24, 4, 46, 0.92);
+    font-style:inherit;
+}
+.adminhomepage {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+
+    </style>
+    
+</head>
+ <body style="background-image: url('images/addveg.jpg');background-size: cover;>
+    <center>
+    <div class="col-5 form"><br/><br/><br/><br/><br/>
+    <div class="add">
+    <h1 class="signup1">Add Up</h1></div>
+        <form method="POST" action="addproduct.jsp">
+            <select name="type" id="veg">
+                <option value="Vegetable">vegetable</option>
+                <option value="Fruit">Fruit</option>
+            
+              </select><br/><br/>
+              
+              <input type="text" placeholder="Name" name="name" id="name" required><br/><br/>
+              <input type="text" placeholder="Price Per Kg" name="price" id="cost" required><br/><br/>
+              
+              <input type="text" placeholder="Image Path" name="image" id="image" required><br/><br/>
+            <input type="submit" value="Submit" class="register"><br/><br/>
+        </form>
+        </div>
+        </center>
+    </div>
+    <div class="adminhomepage">
+        
+        <button type="button" class="btn btn-info"><a href="adminhomepage.jsp" style="text-decoration: none;color:lightslategray;">adminhomepage</a></button>
+    </div>
+   
+
+</body>
+</html>
